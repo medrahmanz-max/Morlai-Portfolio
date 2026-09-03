@@ -31,6 +31,17 @@ npm run build
 npm run preview
 ```
 
+## Deploy to Vercel
+
+This repository includes `vercel.json`, so Vercel can detect the Vite build automatically.
+
+1. Push the repository to GitHub.
+2. In Vercel, select **Add New Project** and import the repository.
+3. Set **Framework Preset** to **Vite** and leave **Root Directory** at the folder containing `package.json`.
+4. Deploy. Vercel will run `npm ci`, `npm run build`, and serve the `dist` directory.
+
+If Vercel reports that it cannot find `package.json`, the **Root Directory** is pointing at the parent folder. Set it to `morlai-portfolio` if the GitHub repository contains this app inside that subfolder.
+
 ## Project Structure
 
 ```
