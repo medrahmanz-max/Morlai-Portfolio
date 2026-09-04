@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "lucide-react": "^0.511.0",
+    "mysql2": "^3.24.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
