@@ -1,5 +1,5 @@
 import { Github, Mail } from 'lucide-react';
-import Logo from "../assets/ImageLogo.jpg";
+import Logo from '../assets/imagelogo.jpeg';
 
 export default function Footer() {
   return (

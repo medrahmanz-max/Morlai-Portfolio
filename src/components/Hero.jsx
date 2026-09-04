@@ -1,7 +1,6 @@
-import { Github, Mail, MapPin, ArrowRight, ExternalLink } from 'lucide-react';
+import { Github, Mail, MapPin, ArrowRight } from 'lucide-react';
 import Button from './Button';
-import profileImg from '../assets/profile.jpg';
-import Image2 from '../assets/image2.jpeg';
+import Logo from '../assets/imagelogo.jpeg';
   
 const orbitItems = [
   { label: 'React', color: 'from-cyan-400 to-blue-500', delay: '0s' },
@@ -80,7 +79,7 @@ export default function Hero() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-2 border-white/20 shadow-2xl shadow-blue-500/20">
                   <img
-                    src={Image2}
+                    src={Logo}
                     alt="Morlai Mansaray"
                     className="w-full h-full object-cover object-top"
                   />

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
-import Logo from "../assets/ImageLogo.jpg";
+import Logo from '../assets/imagelogo.jpeg';
 
 const links = [
   { href: '#home', label: 'Home' },
