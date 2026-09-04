@@ -67,6 +67,16 @@ export default function About() {
               </blockquote>
             </GlassCard>
 
+            {/* My Development Journey */}
+            <GlassCard>
+              <h4 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-3">My Development Journey</h4>
+              <p className="text-slate-300 leading-relaxed">
+                I'm also working towards becoming a Full-Stack Developer. I am currently at the beginner stage of my full-stack development journey, 
+                building my knowledge of both front-end and back-end development. I'm gradually learning how websites communicate with servers, APIs, 
+                databases, and backend technologies while continuing to strengthen my front-end skills.
+              </p>
+            </GlassCard>
+
             {/* Strengths */}
             <div>
               <h4 className="text-sm font-semibold text-slate-300 mb-3 uppercase tracking-wider">How I Work</h4>

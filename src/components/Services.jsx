@@ -1,6 +1,6 @@
 import SectionHeading from './SectionHeading';
 import GlassCard from './GlassCard';
-import { Monitor, Code, RefreshCw, GraduationCap } from 'lucide-react';
+import { Monitor, Code, RefreshCw, GraduationCap, Server } from 'lucide-react';
 
 const services = [
   {
@@ -12,6 +12,11 @@ const services = [
     icon: Code,
     title: 'Front-End Development',
     description: 'Building interactive user interfaces with JavaScript, React and Tailwind CSS. Focused on usable components and maintainable code.',
+  },
+  {
+    icon: Server,
+    title: 'Backend & API Development',
+    description: 'Beginner-level backend development using Node.js, Express.js, REST APIs and MySQL. Learning how to build complete web applications with server-side logic and database integration.',
   },
   {
     icon: RefreshCw,

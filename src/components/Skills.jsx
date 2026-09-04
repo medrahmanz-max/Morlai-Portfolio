@@ -1,6 +1,6 @@
 import SectionHeading from './SectionHeading';
 import GlassCard from './GlassCard';
-import { Code2, Layout, Database, Wrench } from 'lucide-react';
+import { Code2, Layout, Database, Wrench, Server } from 'lucide-react';
 
 const skillGroups = [
   {
@@ -15,7 +15,7 @@ const skillGroups = [
     ],
   },
   {
-    title: 'Web & Front-End',
+    title: 'Front-End Development',
     icon: Layout,
     items: [
       { name: 'HTML & CSS', level: 'Working Knowledge' },
@@ -27,22 +27,47 @@ const skillGroups = [
     ],
   },
   {
-    title: 'Coursework & Concepts',
-    icon: Database,
+    title: 'Backend Development',
+    icon: Server,
     items: [
-      { name: 'Database Systems & SQL', level: 'Familiar' },
-      { name: 'Data Structures & Algorithms', level: 'Familiar' },
-      { name: 'Software Engineering', level: 'Familiar' },
-      { name: 'Mobile App Development', level: 'Learning' },
-      { name: 'Cloud Computing', level: 'Learning' },
+      { name: 'Node.js', level: 'Learning' },
+      { name: 'Express.js', level: 'Learning' },
+      { name: 'REST APIs', level: 'Beginner' },
+      { name: 'API Development', level: 'Learning' },
+      { name: 'Server-side Development', level: 'Beginner' },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Databases',
+    icon: Database,
+    items: [
+      { name: 'MySQL', level: 'Beginner' },
+      { name: 'SQL', level: 'Familiar' },
+      { name: 'Database Integration', level: 'Beginner' },
+      { name: 'Relational Database Concepts', level: 'Familiar' },
+    ],
+  },
+  {
+    title: 'Computer Science',
+    icon: Code2,
+    items: [
+      { name: 'Data Structures & Algorithms', level: 'Familiar' },
+      { name: 'Software Engineering', level: 'Familiar' },
+      { name: 'Cloud Computing Fundamentals', level: 'Learning' },
+      { name: 'Mobile App Development', level: 'Learning' },
+    ],
+  },
+  {
+    title: 'Tools & Office',
     icon: Wrench,
     items: [
       { name: 'Git & GitHub', level: 'Working Knowledge' },
       { name: 'VS Code', level: 'Working Knowledge' },
+      { name: 'Microsoft Word', level: 'Working Knowledge' },
+      { name: 'Microsoft Excel', level: 'Working Knowledge' },
+      { name: 'Microsoft PowerPoint', level: 'Working Knowledge' },
+      { name: 'Microsoft Access', level: 'Familiar' },
+      { name: 'Microsoft Publisher', level: 'Familiar' },
     ],
   },
 ];

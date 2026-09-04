@@ -43,7 +43,8 @@ export default function Hero() {
 
             <p className="text-slate-400 text-lg leading-relaxed max-w-xl">
               I'm Morlai Mansaray, a Computer Science student and aspiring web developer from Freetown, Sierra Leone. 
-              I build responsive websites and modern user interfaces using HTML, CSS, JavaScript, React and Tailwind CSS.
+              I build responsive websites and modern user interfaces using HTML, CSS, JavaScript, React and Tailwind CSS. 
+              Currently expanding my skills into backend development and full-stack development.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2">

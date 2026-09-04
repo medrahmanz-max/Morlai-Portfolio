@@ -42,6 +42,20 @@ export default function Education() {
                   </div>
                 </GlassCard>
               </div>
+
+              <div className="relative">
+                <div className="absolute -left-8 top-1 w-6 h-6 rounded-full bg-slate-600 border-4 border-[#070B14]" />
+                <GlassCard className="!p-5">
+                  <div className="flex items-start gap-3">
+                    <GraduationCap size={20} className="text-violet-400 mt-0.5 shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-white">WASSCE Certificate</h4>
+                      <p className="text-sm text-cyan-400 mt-0.5">West African Senior School Certificate Examination</p>
+                      <p className="text-xs text-slate-500 mt-1">2020 – 2021</p>
+                    </div>
+                  </div>
+                </GlassCard>
+              </div>
             </div>
           </div>
 
