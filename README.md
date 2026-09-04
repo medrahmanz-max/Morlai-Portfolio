@@ -11,7 +11,7 @@ Built with **React + Vite + Tailwind CSS** and a glassmorphism design system.
 - About, Skills (with honest proficiency labels), Services
 - Featured projects including Solar Solutions (live demo)
 - Education timeline + Practical Experience
-- GitHub panel, contact form (ready for backend), premium footer
+- GitHub panel, contact form connected to the Express/MySQL backend, premium footer
 - Fully responsive, accessible, SEO-ready
 
 ## Getting Started
@@ -69,7 +69,7 @@ src/
 
 ## Notes
 
-- Contact form is structured for easy connection to Formspree, EmailJS or a custom backend. Currently shows a clear placeholder success state.
+- Contact form posts to the Express API at `VITE_API_URL` (defaults to `http://localhost:5000`) and reports success only after the message is saved to MySQL.
 - GitHub links point to `https://github.com/MorlaiMansaray` — update if the username differs.
 - Profile photo is taken from the supplied assets.
 - Design follows the premium glassmorphism brief: dark navy/charcoal palette, blue→violet→cyan accents, subtle animations.

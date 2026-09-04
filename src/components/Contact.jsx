@@ -18,30 +18,54 @@ export default function Contact() {
     setErrors(e);
     return Object.keys(e).length === 0;
   };
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleSubmit = async (ev) => {
-    ev.preventDefault();
-    if (!validate()) return;
+  if (!validate()) return;
 
-    setStatus('loading');
+  setStatus('loading');
 
-    // Placeholder: no backend connected.
-    // Structure ready for Formspree, EmailJS, or custom API.
-    try {
-      await new Promise((r) => setTimeout(r, 1200));
-      // Simulate success for demo UX — replace with real endpoint later.
-      // Example: await fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: JSON.stringify(form), headers: { 'Content-Type': 'application/json' } })
-      setStatus('success');
-      setForm({ name: '', email: '', subject: '', message: '' });
-    } catch {
-      setStatus('error');
+  try {
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const response = await fetch(`${apiUrl}/api/contact`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || 'Failed to send message');
     }
-  };
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    if (errors[e.target.name]) setErrors({ ...errors, [e.target.name]: '' });
-  };
+    setStatus('success');
+
+    setForm({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+    setErrors({});
+
+  } catch (error) {
+    console.error('Contact form error:', error);
+
+    setStatus('error');
+  }
+};
+
+ const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  setForm((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
 
   return (
     <section id="contact" className="py-20 relative">
@@ -116,7 +140,7 @@ export default function Contact() {
 
             {status === 'success' && (
               <div className="flex items-center gap-2 text-sm text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-xl px-4 py-3">
-                <CheckCircle size={18} /> Message prepared. Connect a backend (Formspree / EmailJS) to enable real delivery.
+                <CheckCircle size={18} /> Message received successfully. I will get back to you soon.
               </div>
             )}
             {status === 'error' && (
