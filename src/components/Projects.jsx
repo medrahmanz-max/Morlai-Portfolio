@@ -9,7 +9,7 @@ const projects = [
     description: 'Responsive solar energy website presenting clean energy solutions, services, projects and customer information. Built as a complete multi-section site with modern layout and clear calls to action.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Vite'],
     live: 'https://solarsolutionsl.vercel.app/',
-    github: 'https://github.com/MorlaiMansaray',
+    github: 'https://github.com/medrahmanz-max',
     featured: true,
     gradient: 'from-amber-500/20 via-orange-500/10 to-yellow-500/5',
   },
@@ -18,7 +18,7 @@ const projects = [
     title: 'Fatish Kitchen Website',
     description: 'Structured business website applying core HTML, CSS and web design principles. Clean layout focused on presenting services and information clearly.',
     tech: ['HTML', 'CSS'],
-    github: 'https://github.com/MorlaiMansaray',
+    github: 'https://github.com/medrahmanz-max',
     gradient: 'from-emerald-500/20 via-teal-500/10 to-cyan-500/5',
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     title: 'React UI Project',
     description: 'Modern user interface using component-based front-end development with React, JavaScript, Vite and Tailwind CSS.',
     tech: ['React', 'JavaScript', 'Vite', 'Tailwind CSS'],
-    github: 'https://github.com/MorlaiMansaray',
+    github: 'https://github.com/medrahmanz-max',
     gradient: 'from-blue-500/20 via-indigo-500/10 to-violet-500/5',
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     title: 'My First Phone Layout',
     description: 'Mobile phone interface created as front-end practice. Focused on layout, spacing and interactive elements using modern tooling.',
     tech: ['JavaScript', 'Vite', 'Tailwind CSS'],
-    github: 'https://github.com/MorlaiMansaray',
+    github: 'https://github.com/medrahmanz-max',
     gradient: 'from-violet-500/20 via-purple-500/10 to-pink-500/5',
   },
   {
@@ -42,9 +42,21 @@ const projects = [
     title: 'Class Practice Projects',
     description: 'Programming and web development exercises completed as part of Computer Science coursework — foundations in logic, structure and implementation.',
     tech: ['C#', 'Python', 'Java', 'HTML/CSS'],
-    github: 'https://github.com/MorlaiMansaray',
+    github: 'https://github.com/medrahmanz-max',
     gradient: 'from-slate-500/20 via-slate-400/10 to-slate-300/5',
   },
+
+    {
+    number: '06',
+    title: 'morlai-mansaray-portfolio-Website',
+    description: 'Built with React + Vite + Tailwind CSS and a glassmorphism design system.',
+    tech: ['React', 'Tailwind CSS', 'JavaScript', 'Vite'],
+    live: 'https://morlai-mansaray-portfolio.vercel.app/',
+    github: 'https://github.com/medrahmanz-max',
+    featured: true,
+    gradient: 'from-amber-500/20 via-orange-500/10 to-yellow-500/5',
+  },
+
 ];
 
 export default function Projects() {
