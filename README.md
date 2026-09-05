@@ -11,7 +11,7 @@ Built with **React + Vite + Tailwind CSS** and a glassmorphism design system.
 - About, Skills (with honest proficiency labels), Services
 - Featured projects including Solar Solutions (live demo)
 - Education timeline + Practical Experience
-- GitHub panel, contact form connected to the Express/MySQL backend, premium footer
+- GitHub panel, contact section, premium footer
 - Fully responsive, accessible, SEO-ready
 
 ## Getting Started
@@ -24,14 +24,6 @@ npm run dev
 
 Open the URL shown in the terminal (usually http://localhost:5173).
 
-Run the backend in a second terminal while developing the contact form:
-
-```bash
-cd backend
-npm install
-npm start
-```
-
 ## Build for Production
 
 ```bash
@@ -41,24 +33,12 @@ npm run preview
 
 ## Deploy to Vercel
 
-This repository includes `vercel.json`, so Vercel can build the Vite frontend and deploy the Express contact API as a serverless function. The backend does not need VS Code or a local terminal to stay open after deployment.
+This repository includes `vercel.json`, so Vercel can build and deploy the Vite frontend.
 
 1. Push the repository to GitHub.
 2. In Vercel, select **Add New Project** and import the repository.
 3. Set **Framework Preset** to **Vite** and leave **Root Directory** at the folder containing `package.json`.
 4. Deploy. Vercel will run `npm ci`, `npm run build`, and serve the `dist` directory.
-
-Add these environment variables in the Vercel project settings before testing the contact form:
-
-```text
-DB_HOST
-DB_USER
-DB_PASSWORD
-DB_NAME
-DB_PORT
-```
-
-The frontend uses the deployed same-origin `/api/contact` endpoint automatically. Set `VITE_API_URL` only when the API is deployed to a separate domain.
 
 If Vercel reports that it cannot find `package.json`, the **Root Directory** is pointing at the parent folder. Set it to `morlai-portfolio` if the GitHub repository contains this app inside that subfolder.
 
@@ -89,7 +69,7 @@ src/
 
 ## Notes
 
-- Contact form posts to `VITE_API_URL` when configured, otherwise it uses `http://localhost:5000` during development and the same-origin `/api/contact` endpoint in production.
+- The contact form is temporarily unavailable.
 - GitHub links point to `https://github.com/MorlaiMansaray` — update if the username differs.
 - Profile photo is taken from the supplied assets.
 - Design follows the premium glassmorphism brief: dark navy/charcoal palette, blue→violet→cyan accents, subtle animations.
