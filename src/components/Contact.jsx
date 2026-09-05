@@ -1,4 +1,4 @@
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, Github, Mail } from 'lucide-react';
 import SectionHeading from './SectionHeading';
 
 export default function Contact() {
@@ -12,9 +12,27 @@ export default function Contact() {
 
         <div className="max-w-2xl mx-auto">
           <form className="glass rounded-2xl p-6 sm:p-8 space-y-5" aria-disabled="true">
-            <div className="flex items-start gap-3 text-sm text-amber-300 bg-amber-500/10 border border-amber-500/20 rounded-xl px-4 py-3">
-              <AlertCircle size={18} className="shrink-0 mt-0.5" />
-              <span>The contact form is not working for now. Please check back later.</span>
+            <div className="space-y-4 text-sm text-slate-300 bg-blue-500/10 border border-blue-500/20 rounded-xl px-4 py-4">
+              <div className="flex items-start gap-3">
+                <AlertCircle size={18} className="shrink-0 mt-0.5 text-cyan-300" />
+                <p>The contact form is not working for now. You can still contact me through GitHub or email.</p>
+              </div>
+              <div className="flex flex-wrap gap-3 pl-8">
+                <a
+                  href="https://github.com/MorlaiMansaray"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-blue-400/30 bg-blue-500/10 px-3 py-2 text-blue-200 transition-colors hover:border-cyan-300/50 hover:bg-cyan-400/10 hover:text-cyan-200"
+                >
+                  <Github size={16} /> GitHub
+                </a>
+                <a
+                  href="mailto:medrahmanz@gmail.com"
+                  className="inline-flex items-center gap-2 rounded-lg border border-blue-400/30 bg-blue-500/10 px-3 py-2 text-blue-200 transition-colors hover:border-cyan-300/50 hover:bg-cyan-400/10 hover:text-cyan-200"
+                >
+                  <Mail size={16} /> Email me
+                </a>
+              </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-5">
