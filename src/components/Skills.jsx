@@ -70,6 +70,16 @@ const skillGroups = [
       { name: 'Microsoft Publisher', level: 'Familiar' },
     ],
   },
+  {
+    title: 'Design & Creative Tools',
+    icon: Wrench,
+    items: [
+      { name: 'Adobe Photoshop', level: 'Familiar' },
+      { name: 'Adobe Animate', level: 'Familiar' },
+      { name: 'Adobe Illustrator', level: 'Familiar' },
+      { name: 'Adobe Premiere Pro', level: 'Familiar' },
+    ],
+  },
 ];
 
 const levelColor = {
@@ -84,7 +94,7 @@ export default function Skills() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeading
           title="Technical Skills"
-          subtitle="Honest assessment of where I am — learning, familiar, or working knowledge."
+          subtitle="Tools I use for programming, web development, databases, office work, and creative design, including Adobe Photoshop, Adobe Animate, Adobe Illustrator, and Adobe Premiere Pro."
         />
 
         <div className="grid sm:grid-cols-2 gap-6">

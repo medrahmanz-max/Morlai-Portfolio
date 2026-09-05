@@ -21,6 +21,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-white mb-1">Morlai Mansaray</h3>
               <p className="text-sm text-cyan-400 mb-4">Computer Science Student / Web Developer</p>
+              <p className="text-xs text-slate-400 mb-4">Designer / IT Support Specialist / Aiming to Become a Full-Stack Developer</p>
               
               <div className="space-y-3 text-left text-sm text-slate-400">
                 <div className="flex items-center gap-3">
