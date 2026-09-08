@@ -9,7 +9,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeading
           title="More Than Just Code"
-          subtitle="A Computer Science student building practical skills through real projects and continuous learning."
+          subtitle="A Computer Science student building practical skills through real projects, continuous learning, and strong problem-solving habits."
         />
 
         <div className="grid lg:grid-cols-5 gap-8 items-start">
@@ -52,19 +52,18 @@ export default function About() {
           <div className="lg:col-span-3 space-y-6">
             <GlassCard>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Third-year Computer Science student at the University of Management and Technology (UNIMTECH), 
-                with hands-on front-end development experience building responsive websites and interfaces using 
-                HTML, CSS, JavaScript, React, and Tailwind CSS.
+                I am a third-year Computer Science student at the University of Management and Technology (UNIMTECH),
+                with hands-on experience building responsive websites, modern user interfaces, and practical digital
+                solutions through HTML, CSS, JavaScript, React, and Tailwind CSS.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Comfortable across the fundamentals of programming including C#, Python, C++, and Java, with 
-                knowledge of databases, software engineering, data structures, and algorithms. Currently growing 
-                my portfolio through practical projects and public GitHub work while seeking opportunities to 
-                apply my knowledge in a real workplace.
+                My foundation includes programming in C#, Python, C++, and Java, alongside a strong interest in
+                databases, software engineering, problem solving, and data structures. I am continuously improving my
+                portfolio through personal projects and public GitHub work while preparing to contribute in a real-world
+                professional environment.
               </p>
               <blockquote className="border-l-2 border-blue-500/50 pl-4 italic text-slate-400">
-                I believe good websites should not only look beautiful. They should be useful, responsive, 
-                accessible, and easy to use.
+                I believe good technology should be functional, accessible, and memorable — not just visually appealing.
               </blockquote>
             </GlassCard>
 
@@ -72,9 +71,9 @@ export default function About() {
             <GlassCard>
               <h4 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-3">My Development Journey</h4>
               <p className="text-slate-300 leading-relaxed">
-                I'm also working towards becoming a Full-Stack Developer. I am currently at the beginner stage of my full-stack development journey, 
-                building my knowledge of both front-end and back-end development. I'm gradually learning how websites communicate with servers, APIs, 
-                databases, and backend technologies while continuing to strengthen my front-end skills.
+                I am also building toward a full-stack development path, expanding my knowledge of both front-end and
+                back-end systems. I am learning how websites interact with servers, APIs, databases, and modern backend
+                tools while continuing to strengthen my design and development skills.
               </p>
             </GlassCard>
 

@@ -1,14 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css');
 @import "tailwindcss";
 
-@theme {
-  --color-bg-primary: #070B14;
-  --color-bg-secondary: #0B1120;
-  --color-bg-card: #111827;
-  --color-bg-elevated: #172033;
-  --color-accent-blue: #3B82F6;
-  --color-accent-indigo: #6366F1;
-  --color-accent-violet: #8B5CF6;
-  --color-accent-cyan: #06B6D4;
+:root {
+  color: #2a211b;
+  background: #e7d9be;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 html {
@@ -16,104 +13,120 @@ html {
 }
 
 body {
-  background-color: #070B14;
-  color: #e2e8f0;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  background: #e7d9be;
+  color: #2a211b;
+  font-family: 'IBM Plex Sans', sans-serif;
   overflow-x: hidden;
 }
 
-/* Glassmorphism utility */
-.glass {
-  background: rgba(17, 24, 39, 0.55);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.glass-strong {
-  background: rgba(17, 24, 39, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+* {
+  box-sizing: border-box;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #3B82F6, #6366F1, #8B5CF6, #06B6D4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+#root {
+  min-height: 100vh;
 }
 
-.gradient-border {
-  position: relative;
+.folio {
+  background: #e7d9be;
+  color: #2a211b;
 }
 
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  border-radius: inherit;
-  background: linear-gradient(135deg, #3B82F6, #8B5CF6, #06B6D4);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+.disp {
+  font-family: 'Spectral', Georgia, serif;
 }
 
-/* Custom scrollbar */
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.rail {
+  border-right: 1px solid rgba(184, 70, 44, 0.85);
+}
+
+.rail-dark {
+  border-right: 1px solid rgba(198, 138, 49, 0.55);
+}
+
+.marker {
+  white-space: nowrap;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #b8462c;
+  outline-offset: 3px;
+}
+
+.on-dark a:focus-visible {
+  outline-color: #c68a31;
+}
+
+.btn-rust {
+  background: #b8462c;
+  color: #f3ebdd;
+  border-radius: 0;
+  box-shadow: 2px 2px 0 0 #c68a31;
+  transition: box-shadow 120ms linear, background-color 120ms linear;
+}
+
+.btn-rust:hover {
+  box-shadow: 0 0 0 0 #c68a31;
+  background: #a63c24;
+}
+
+.txt-act {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.txt-act .ti {
+  display: inline-block;
+  transition: transform 120ms linear;
+}
+
+.txt-act:hover .ti {
+  transform: translateX(3px);
+}
+
+.svc-row summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.svc-row summary::-webkit-details-marker {
+  display: none;
+}
+
+.svc-row .plus {
+  transition: transform 120ms linear;
+}
+
+.svc-row[open] .plus {
+  transform: rotate(45deg);
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #0B1120;
+  background: #e7d9be;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #b8462c;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
-}
-
-/* Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.7s ease-out forwards;
-}
-
-/* Orbit animation */
-@keyframes orbit {
-  from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
-  to { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
-}
-
-.orbit-item {
-  animation: orbit 20s linear infinite;
+  background: #9d3821;
 }
