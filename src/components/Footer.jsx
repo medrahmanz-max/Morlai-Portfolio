@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 via-indigo-500 to-violet-500 flex items-center justify-center font-bold text-white text-xs">
+            <div className="w-9 h-9 rounded-lg bg-linear-to-br from-blue-500 via-indigo-500 to-violet-500 flex items-center justify-center font-bold text-white text-xs">
               <img className="w-full h-full object-cover rounded-lg" src={Logo} alt="Brand Logo" />
             </div>
             <div>

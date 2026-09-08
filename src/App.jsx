@@ -1,7 +1,7 @@
 import logo from './assets/imagelogo.jpeg';
 import profileImg from './assets/profile.jpg';
 
-const navItems = ['About', 'Learning', 'Work', 'Services', 'Education', 'Contact'];
+const navItems = ['About', 'Learning', 'Work', 'Gallery', 'Services', 'Education', 'Contact'];
 
 const chapterData = [
   {
@@ -51,6 +51,15 @@ const chapterData = [
       ['Adobe Premiere Pro', 'practising'],
     ],
   },
+];
+
+const galleryItems = [
+  { title: 'Solar Solutions', subtitle: 'Landing page', accent: 'bg-[#B8462C]' },
+  { title: 'Business Website', subtitle: 'Brand showcase', accent: 'bg-[#C68A31]' },
+  { title: 'React UI', subtitle: 'Component mockup', accent: 'bg-[#42687A]' },
+  { title: 'Mobile Layout', subtitle: 'Phone interface', accent: 'bg-[#2A211B]' },
+  { title: 'Practice Projects', subtitle: 'Academic builds', accent: 'bg-[#8C6D4A]' },
+  { title: 'Portfolio', subtitle: 'Personal portfolio', accent: 'bg-[#B6A5D8]' },
 ];
 
 const serviceItems = [
@@ -180,11 +189,11 @@ export default function App() {
                 I&apos;m Morlai Mansaray, a Computer Science student building websites in
                 <span className="relative whitespace-nowrap">
                   Freetown.
-                  <span className="absolute left-0 -bottom-1 w-[130%] h-[2px] bg-[#B8462C]" />
+                  <span className="absolute left-0 -bottom-1 w-[130%] h-0.5 bg-[#B8462C]" />
                 </span>
               </h1>
               <p className="mt-9 text-[17px] leading-[1.7] max-w-[54ch]">
-                I&apos;m in my third year at UNIMTECH. Most of my learning happens by turning coursework and small ideas into working interfaces.
+                I&apos;m in my final year at UNIMTECH. Most of my learning happens by turning coursework and small ideas into working interfaces.
               </p>
 
               <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
@@ -209,19 +218,19 @@ export default function App() {
                   <div className="mono text-[12px] uppercase tracking-[0.12em] text-[#42687A]">projects</div>
                 </div>
                 <div className="px-8 py-4">
-                  <div className="disp text-[26px] font-semibold">Year 3</div>
+                  <div className="disp text-[26px] font-semibold">Final Year</div>
                   <div className="mono text-[12px] uppercase tracking-[0.12em] text-[#42687A]">at UNIMTECH</div>
                 </div>
                 <div className="px-8 py-4">
-                  <div className="disp text-[26px] font-semibold">2027</div>
-                  <div className="mono text-[12px] uppercase tracking-[0.12em] text-[#42687A]">expected</div>
+                  <div className="disp text-[26px] font-semibold">2026</div>
+                  <div className="mono text-[12px] uppercase tracking-[0.12em] text-[#42687A]">current</div>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-4">
               <div className="bg-[#B6A5D8] border border-[#2A211B]/25">
-                <img alt="Morlai Mansaray" className="w-full h-[420px] lg:h-[520px] object-cover object-top" src={profileImg} />
+                <img alt="Morlai Mansaray" className="w-full h-105 lg:h-130 object-cover object-top" src={profileImg} />
               </div>
               <p className="mono text-[12px] text-[#42687A] mt-3">Freetown, Sierra Leone · 2026</p>
             </div>
@@ -239,15 +248,15 @@ export default function App() {
 
           <div className="grid grid-cols-1 lg:grid-cols-11 gap-10 lg:gap-14 mt-12">
             <div className="lg:col-span-4">
-              <div className="w-[132px] bg-[#B6A5D8] border border-[#2A211B]/25">
-                <img alt="Morlai Mansaray portrait" className="w-[132px] h-[160px] object-cover object-top" src={profileImg} />
+              <div className="w-33 bg-[#B6A5D8] border border-[#2A211B]/25">
+                <img alt="Morlai Mansaray portrait" className="w-33 h-40 object-cover object-top" src={profileImg} />
               </div>
 
               <dl className="mt-7 border-t border-[#2A211B]/25">
                 {[
                   ['Name', 'Morlai Mansaray'],
                   ['University', 'University of Management and Technology (UNIMTECH)'],
-                  ['Standing', 'Year 3, expected 2027'],
+                  ['Standing', 'Final Year Student'],
                   ['Based in', 'Freetown, Sierra Leone'],
                   ['Email', 'medrahmanz@gmail.com'],
                   ['Phone', '+232 77-06-24-01'],
@@ -268,7 +277,7 @@ export default function App() {
 
             <div className="lg:col-span-7">
               <p className="text-[17px] leading-[1.75] max-w-[62ch]">
-                I&apos;m a third-year Computer Science student at UNIMTECH with hands-on front-end experience. I build responsive
+                I&apos;m a final-year Computer Science student at UNIMTECH with hands-on front-end experience. I build responsive
                 websites and interfaces using HTML, CSS, JavaScript, React and Tailwind CSS, mostly by taking something from
                 class or a small idea of my own and finishing it properly.
               </p>
@@ -284,7 +293,7 @@ export default function App() {
                 </blockquote>
               </figure>
 
-              <p className="mono text-[13px] uppercase tracking-[0.1em] text-[#2A211B] mt-12 pt-4 border-t border-[#2A211B]/25">
+              <p className="mono text-[13px] uppercase tracking-widest text-[#2A211B] mt-12 pt-4 border-t border-[#2A211B]/25">
                 Curious
                 <span className="text-[#B8462C]"> / </span>
                 dependable
@@ -310,7 +319,7 @@ export default function App() {
           {chapterData.map((chapter, index) => (
             <div key={chapter.title}>
               {index > 0 && (
-                <div aria-hidden="true" className={index === 1 ? 'ml-1 sm:ml-8' : 'ml-1 sm:ml-[132px]'}>
+                <div aria-hidden="true" className={index === 1 ? 'ml-1 sm:ml-8' : 'ml-1 sm:ml-33'}>
                   <svg className="text-[#B8462C]" fill="none" height="86" viewBox="0 0 180 86" width="180">
                     <path d="M1 0 V42 H120 V86" stroke="currentColor" strokeWidth="1" />
                     <circle cx="120" cy="86" fill="currentColor" r="2.5" />
@@ -318,7 +327,7 @@ export default function App() {
                 </div>
               )}
 
-              <div className={`max-w-[880px] ${index === 1 ? 'ml-1 sm:ml-[124px]' : index === 2 ? 'ml-1 sm:ml-[252px]' : ''}`}>
+              <div className={`max-w-220 ${index === 1 ? 'ml-1 sm:ml-31' : index === 2 ? 'ml-1 sm:ml-63' : ''}`}>
                 <div className="flex items-baseline gap-4">
                   <span className="mono text-[12px] uppercase tracking-[0.16em] text-[#C68A31]">Chapter {index + 1}</span>
                   <span className="h-px flex-1 bg-[#2A211B]/25" />
@@ -331,7 +340,7 @@ export default function App() {
                   {chapter.items.map(([name, status]) => (
                     <div key={name} className="flex items-baseline justify-between gap-4 py-2.5 border-b border-[#2A211B]/15">
                       <dt className="text-[16px]">{name}</dt>
-                      <dd className="mono text-[12px] uppercase tracking-[0.1em] text-[#42687A]">{status}</dd>
+                      <dd className="mono text-[12px] uppercase tracking-widest text-[#42687A]">{status}</dd>
                     </div>
                   ))}
                 </dl>
@@ -359,7 +368,7 @@ export default function App() {
                 <article key={project.title} className="mt-14 border-t-2 border-[#2A211B] pt-8">
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
                     <div className="lg:col-span-7">
-                      <div className={`${project.accent} h-[300px] lg:h-[360px] flex items-center justify-center`}>
+                      <div className={`${project.accent} h-75 lg:h-90 flex items-center justify-center`}>
                         <span className="disp text-[#E7D9BE] text-[190px] leading-none font-semibold select-none">{project.letter}</span>
                       </div>
                     </div>
@@ -409,7 +418,7 @@ export default function App() {
                       <p className="text-[16px] leading-[1.75] mt-3 max-w-[52ch]">{project.description}</p>
                     </div>
                     <div className="lg:col-span-4">
-                      <div className={`${project.accent} h-[150px] flex items-center justify-center`}>
+                      <div className={`${project.accent} h-37.5 flex items-center justify-center`}>
                         <span className="disp text-[#F3EBDD] text-[90px] leading-none font-semibold select-none">{project.letter}</span>
                       </div>
                     </div>
@@ -417,7 +426,7 @@ export default function App() {
                 ) : (
                   <>
                     <div className="lg:col-span-4 lg:order-1">
-                      <div className={`${project.accent} h-[150px] flex items-center justify-center`}>
+                      <div className={`${project.accent} h-37.5 flex items-center justify-center`}>
                         <span className="disp text-[#F3EBDD] text-[90px] leading-none font-semibold select-none">{project.letter}</span>
                       </div>
                     </div>
@@ -443,6 +452,32 @@ export default function App() {
               </article>
             );
           })}
+        </div>
+      </section>
+
+      <section className="grid grid-cols-[13%_1fr] md:grid-cols-[11%_1fr] bg-[#F3EBDD]" id="gallery">
+        <div className="rail pt-24 pb-24 pr-3 md:pr-5 text-right">
+          <span className="mono text-[12px] tracking-[0.14em] uppercase text-[#B8462C]">04 / Gallery</span>
+        </div>
+
+        <div className="pt-24 pb-24 pl-5 md:pl-9 pr-6 md:pr-14">
+          <h2 className="disp text-[34px] sm:text-[42px] font-semibold leading-tight">Project gallery</h2>
+          <p className="text-[16px] leading-[1.7] max-w-[56ch] mt-5">A dedicated space for screenshots and project previews that I will add later as I build and complete more work.</p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
+            {galleryItems.map((item) => (
+              <div key={item.title} className="border border-[#2A211B]/20 bg-[#F8F0E5] shadow-sm">
+                <div className={`${item.accent} h-52 flex items-center justify-center relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.18),transparent_55%)]" />
+                  <span className="disp text-[72px] text-[#F3EBDD] relative z-10">{item.title.charAt(0)}</span>
+                </div>
+                <div className="p-5">
+                  <p className="mono text-[12px] uppercase tracking-widest text-[#42687A]">{item.subtitle}</p>
+                  <h3 className="disp text-[24px] mt-2">{item.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -488,7 +523,7 @@ export default function App() {
 
       <section className="grid grid-cols-[13%_1fr] md:grid-cols-[11%_1fr] bg-[#F3EBDD]" id="education">
         <div className="rail pt-24 pb-24 pr-3 md:pr-5 text-right">
-          <span className="marker mono text-[12px] tracking-[0.1em] uppercase text-[#B8462C]">06 / Educ.</span>
+          <span className="marker mono text-[12px] tracking-widest uppercase text-[#B8462C]">06 / Educ.</span>
         </div>
 
         <div className="pt-24 pb-24 pl-5 md:pl-9 pr-6 md:pr-14">
@@ -507,7 +542,7 @@ export default function App() {
                   <div>
                     <p className="disp text-[21px] font-semibold leading-snug">BSc Computer Science</p>
                     <p className="text-[16px] mt-1.5">University of Management and Technology (UNIMTECH)</p>
-                    <p className="mono text-[12px] uppercase tracking-[0.1em] text-[#42687A] mt-2">Year 3</p>
+                    <p className="mono text-[12px] uppercase tracking-widest text-[#42687A] mt-2">Final Year</p>
                   </div>
                 </li>
 
@@ -589,7 +624,7 @@ export default function App() {
         </div>
 
         <div className="pt-24 pb-24 pl-5 md:pl-9 pr-6 md:pr-14">
-          <div className="max-w-[620px]">
+          <div className="max-w-155">
             <h2 className="disp text-[34px] sm:text-[42px] font-semibold leading-[1.15]">Have a website idea or a project to discuss?</h2>
             <p className="text-[17px] leading-[1.75] mt-6">For questions, small website work, or feedback on a project, email me.</p>
 

@@ -76,7 +76,7 @@ export default function Projects() {
             >
               <div className="grid md:grid-cols-5 gap-0">
                 {/* Visual */}
-                <div className={`md:col-span-2 relative min-h-[200px] md:min-h-[240px] bg-gradient-to-br ${p.gradient} flex items-center justify-center overflow-hidden`}>
+                <div className={`md:col-span-2 relative min-h-50 md:min-h-60 bg-linear-to-br ${p.gradient} flex items-center justify-center overflow-hidden`}>
                   <div className="absolute inset-0 opacity-30" style={{
                     backgroundImage: `radial-gradient(circle at 30% 40%, rgba(59,130,246,0.3), transparent 50%),
                                        radial-gradient(circle at 70% 60%, rgba(139,92,246,0.2), transparent 50%)`

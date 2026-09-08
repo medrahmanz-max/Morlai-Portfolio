@@ -42,7 +42,7 @@ export default function Services() {
         <div className="grid sm:grid-cols-2 gap-6">
           {services.map((s) => (
             <GlassCard key={s.title} className="group">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center border border-white/10 mb-4 group-hover:scale-105 transition-transform">
+              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center border border-white/10 mb-4 group-hover:scale-105 transition-transform">
                 <s.icon size={22} className="text-blue-400" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">{s.title}</h3>

@@ -39,7 +39,7 @@ export default function Navbar() {
         <nav className={`glass-strong rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between ${scrolled ? 'shadow-xl' : ''}`}>
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 via-indigo-500 to-violet-500 flex items-center justify-center font-bold text-white text-sm shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-xl bg-linear-to-br from-blue-500 via-indigo-500 to-violet-500 flex items-center justify-center font-bold text-white text-sm shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform">
              <img className="w-full h-full object-cover rounded-lg" src={Logo} alt="Brand Logo" />
             </div>
             <span className="font-semibold text-white hidden sm:block">Morlai Mansaray</span>

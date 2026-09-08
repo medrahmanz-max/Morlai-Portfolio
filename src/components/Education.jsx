@@ -15,16 +15,16 @@ export default function Education() {
           {/* Timeline */}
           <div>
             <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-6">Education</h3>
-            <div className="relative pl-8 space-y-8 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-px before:bg-gradient-to-b before:from-blue-500/50 before:via-violet-500/30 before:to-transparent">
+            <div className="relative pl-8 space-y-8 before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-px before:bg-linear-to-b before:from-blue-500/50 before:via-violet-500/30 before:to-transparent">
               <div className="relative">
-                <div className="absolute -left-8 top-1 w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 border-4 border-[#070B14] shadow-lg shadow-blue-500/30" />
-                <GlassCard className="!p-5">
+                <div className="absolute -left-8 top-1 w-6 h-6 rounded-full bg-linear-to-br from-blue-500 to-violet-500 border-4 border-[#070B14] shadow-lg shadow-blue-500/30" />
+                <GlassCard className="p-5!">
                   <div className="flex items-start gap-3">
                     <GraduationCap size={20} className="text-blue-400 mt-0.5 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-white">Bachelor's Degree in Computer Science</h4>
                       <p className="text-sm text-cyan-400 mt-0.5">University of Management and Technology (UNIMTECH)</p>
-                      <p className="text-xs text-slate-500 mt-1">Year 3 · Expected Graduation 2027</p>
+                      <p className="text-xs text-slate-500 mt-1">Final Year · Expected Graduation 2027</p>
                     </div>
                   </div>
                 </GlassCard>
@@ -32,7 +32,7 @@ export default function Education() {
 
               <div className="relative">
                 <div className="absolute -left-8 top-1 w-6 h-6 rounded-full bg-slate-600 border-4 border-[#070B14]" />
-                <GlassCard className="!p-5">
+                <GlassCard className="p-5!">
                   <div className="flex items-start gap-3">
                     <BookOpen size={20} className="text-violet-400 mt-0.5 shrink-0" />
                     <div>
@@ -45,7 +45,7 @@ export default function Education() {
 
               <div className="relative">
                 <div className="absolute -left-8 top-1 w-6 h-6 rounded-full bg-slate-600 border-4 border-[#070B14]" />
-                <GlassCard className="!p-5">
+                <GlassCard className="p-5!">
                   <div className="flex items-start gap-3">
                     <GraduationCap size={20} className="text-violet-400 mt-0.5 shrink-0" />
                     <div>
@@ -69,7 +69,7 @@ export default function Education() {
                 { icon: Database, title: 'Database Coursework', desc: 'Learning database systems, basic SQL and data modeling as part of the CS curriculum.' },
                 { icon: Github, title: 'GitHub Projects', desc: 'Public repositories and personal projects used to practice version control and showcase progress.' },
               ].map((item) => (
-                <GlassCard key={item.title} className="!p-5 flex items-start gap-4">
+                <GlassCard key={item.title} className="p-5! flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-white/8">
                     <item.icon size={18} className="text-blue-400" />
                   </div>

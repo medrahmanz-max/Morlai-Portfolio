@@ -30,7 +30,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Calendar size={16} className="text-violet-400 shrink-0" />
-                  <span>Year 3 · Expected 2027</span>
+                  <span>Final Year · Expected 2027</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin size={16} className="text-cyan-400 shrink-0" />
@@ -52,7 +52,7 @@ export default function About() {
           <div className="lg:col-span-3 space-y-6">
             <GlassCard>
               <p className="text-slate-300 leading-relaxed mb-4">
-                I am a third-year Computer Science student at the University of Management and Technology (UNIMTECH),
+                I am a Final Year Computer Science student at the University of Management and Technology (UNIMTECH),
                 with hands-on experience building responsive websites, modern user interfaces, and practical digital
                 solutions through HTML, CSS, JavaScript, React, and Tailwind CSS.
               </p>

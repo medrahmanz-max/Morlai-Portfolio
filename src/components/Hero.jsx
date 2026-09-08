@@ -71,7 +71,7 @@ export default function Hero() {
 
           {/* Right - Developer Orbit */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px]">
+            <div className="relative w-70 h-70 sm:w-80 sm:h-80">
               {/* Orbit ring */}
               <div className="absolute inset-0 rounded-full border border-white/10" />
               <div className="absolute inset-4 rounded-full border border-dashed border-white/5" />
@@ -84,7 +84,7 @@ export default function Hero() {
                     alt="Morlai Mansaray"
                     className="w-full h-full object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#070B14]/40 to-transparent" />
                 </div>
               </div>
 
@@ -104,7 +104,7 @@ export default function Hero() {
                       animationDuration: `${5 + i * 0.4}s`,
                     }}
                   >
-                    <span className={`bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
+                    <span className={`bg-linear-to-r ${item.color} bg-clip-text text-transparent`}>
                       {item.label}
                     </span>
                   </div>
@@ -122,7 +122,7 @@ export default function Hero() {
             { value: '03', label: 'Years of CS Study' },
             { value: '100%', label: 'Passion for Technology' },
           ].map((stat) => (
-            <div key={stat.label} className="glass rounded-2xl p-5 text-center hover:bg-white/[0.06] transition-colors">
+            <div key={stat.label} className="glass rounded-2xl p-5 text-center hover:bg-white/6 transition-colors">
               <div className="text-2xl sm:text-3xl font-bold gradient-text mb-1">{stat.value}</div>
               <div className="text-xs sm:text-sm text-slate-400">{stat.label}</div>
             </div>

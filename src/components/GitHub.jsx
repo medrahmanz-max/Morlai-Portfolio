@@ -6,9 +6,9 @@ export default function GitHubSection() {
     <section className="py-16 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="glass rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-violet-600/10 pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-br from-blue-600/10 via-transparent to-violet-600/10 pointer-events-none" />
           <div className="relative z-10">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center border border-white/10 shadow-xl">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-linear-to-br from-slate-700 to-slate-800 flex items-center justify-center border border-white/10 shadow-xl">
               <Github size={32} className="text-white" />
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">

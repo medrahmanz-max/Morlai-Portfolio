@@ -101,7 +101,7 @@ export default function Skills() {
           {skillGroups.map((group) => (
             <GlassCard key={group.title}>
               <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center border border-white/10">
+                <div className="w-10 h-10 rounded-xl bg-linear-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center border border-white/10">
                   <group.icon size={20} className="text-blue-400" />
                 </div>
                 <h3 className="font-semibold text-white">{group.title}</h3>
