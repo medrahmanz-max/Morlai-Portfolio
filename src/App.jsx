@@ -1,5 +1,6 @@
 import logo from './assets/imagelogo.jpeg';
 import profileImg from './assets/profile.jpg';
+import aboutImg from './assets/image2.png';
 
 const navItems = ['About', 'Learning', 'Work', 'Gallery', 'Services', 'Education', 'Contact'];
 
@@ -249,7 +250,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-11 gap-10 lg:gap-14 mt-12">
             <div className="lg:col-span-4">
               <div className="w-33 bg-[#B6A5D8] border border-[#2A211B]/25">
-                <img alt="Morlai Mansaray portrait" className="w-33 h-40 object-cover object-top" src={profileImg} />
+                <img alt="Morlai Mansaray portrait" className="w-33 h-40 object-cover object-top" src={aboutImg} />
               </div>
 
               <dl className="mt-7 border-t border-[#2A211B]/25">
